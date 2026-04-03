@@ -2,6 +2,8 @@ pipeline {
     agent any
 
     environment {
+        NETLIFY_TOKEN = credentials('NETLIFY_TOKEN')
+        NETLIFY_SITE_ID = credentials('NETLIFY_SITE_ID')
         CI = 'true'
     }
 
